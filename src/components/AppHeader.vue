@@ -14,14 +14,13 @@ export default {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link class="nav-link active" aria-current="page" :to="{name: 'home'}">Home</router-link>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Project List</a>
+              <router-link class="nav-link active" aria-current="page" :to="{name: 'projects'}">Projects</router-link>
             </li>
            
           </ul>
