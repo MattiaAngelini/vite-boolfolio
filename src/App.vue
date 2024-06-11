@@ -1,10 +1,8 @@
 <script>
-import ProjectList from './components/ProjectList.vue'
 import AppHeader from './components/AppHeader.vue'
 
 export default {
   components: {
-    ProjectList,
     AppHeader
   }
 
