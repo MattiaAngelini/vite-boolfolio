@@ -1,11 +1,11 @@
 <script>
 import axios from 'axios';
-import SingleProject from '../components/SingleProject.vue';
+import SingleProjectDetails from '../components/SingleProjectDetails.vue';
 
 export default {
     name: 'ProjectList',
     components: {
-        SingleProject
+        SingleProjectDetails
     },
 
     data() {
@@ -45,7 +45,7 @@ export default {
     
     <!--Projects Cards-->
     <div class="d-flex justify-content-center flex-wrap gap-2">
-        <SingleProject v-for="project in projects" :project="project"> </SingleProject>
+        <SingleProjectDetails v-for="project in projects" :project="project"> </SingleProjectDetails>
     </div>
 
     <!-- Buttons Pagination ->(3) -->
