@@ -28,19 +28,19 @@ export default {
 
     <!--Single Project-->
     <section class="container">
-        <h1>Single project:</h1> 
-        <!--Name-->
+        
         <div v-if="project">
-          <h2>{{ project.name }}</h2>
-        </div>
-        <!--Summary-->
-        <div v-if="project">
-          <h2>{{ project.summary }}</h2>
-        </div>
-        <!--Cover Image-->
-        <div v-if="project">
+       
+          <h1>Name project: </h1>     
+          <p>{{ project.name }}</p>
+       
+          <h2>Summary project: </h2>  
+          <p>{{ project.summary }}</p>
+         
+          <h3>Image:</h3>
             <img :src="`http://127.0.0.1:8000/storage/${project.cover_image}`" >
         </div>
+        
     </section>
 
 </template>
